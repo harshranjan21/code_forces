@@ -1,0 +1,24 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+	int t;
+	cin>>t;
+	while(t--)
+	{
+		long long int a,b,c,k,l=0;
+		cin>>a>>b;
+		c=b;
+		while(b>0)
+		{
+			l++;
+			b=b/10;
+		}
+		b=c;
+		k=pow(10,l)-1;
+		if(b==k)
+		cout<<a*l<<endl;
+		else
+		cout<<a*(l-1)<<endl;
+	}
+}
